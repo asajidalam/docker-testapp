@@ -15,7 +15,7 @@ app.get("/getUsers", async (req, res) => {
     await client.connect(URL);
     console.log('Connected successfully to server');
 
-    const db = client.db("apnacollege-db");
+    const db = client.db("apnacollege-db");                        // this is database
     const data = await db.collection('users').find({}).toArray();
     
     client.close();
