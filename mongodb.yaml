@@ -5,7 +5,7 @@ services:
     - "27017:27017"
     environment:
     - MONGO_INITDB_ROOT_USERNAME=admin
-      # MONGO_INITDB_ROOT_USERNAME: admin     this is an alternative syntax
+      # MONGO_INITDB_ROOT_USERNAME: admin     this is an alternative syntax ok
     - MONGO_INITDB_ROOT_PASSWORD=qwerty
     
   mongo-express:
